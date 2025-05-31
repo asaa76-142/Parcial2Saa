@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Parcial2SaaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="IdiomaOriginal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
   <EntityType Name="Series">
     <Key>
       <PropertyRef Name="id" />
@@ -10,12 +18,31 @@
     <Property Name="director" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="episodios" Type="int" Nullable="false" />
     <Property Name="fechaEstreno" Type="date" Nullable="false" />
+    <Property Name="urlPortada" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="ididiomaOriginal" Type="int" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
+  <Association Name="fk_Series_IdiomaOriginal">
+    <End Role="IdiomaOriginal" Type="Self.IdiomaOriginal" Multiplicity="1" />
+    <End Role="Series" Type="Self.Series" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IdiomaOriginal">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Series">
+        <PropertyRef Name="ididiomaOriginal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Function Name="paSerieListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="parametro" Type="varchar" Mode="In" />
   </Function>
   <EntityContainer Name="Parcial2SaaModelStoreContainer">
+    <EntitySet Name="IdiomaOriginal" EntityType="Self.IdiomaOriginal" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Series" EntityType="Self.Series" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_Series_IdiomaOriginal" Association="Self.fk_Series_IdiomaOriginal">
+      <End Role="IdiomaOriginal" EntitySet="IdiomaOriginal" />
+      <End Role="Series" EntitySet="Series" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

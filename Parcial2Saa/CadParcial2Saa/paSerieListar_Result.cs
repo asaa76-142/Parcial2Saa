@@ -19,6 +19,8 @@ namespace CadParcial2Saa
         public string director { get; set; }
         public int episodios { get; set; }
         public System.DateTime fechaEstreno { get; set; }
+        public string urlPortada { get; set; }
+        public int ididiomaOriginal { get; set; }
         public short estado { get; set; }
     }
 }

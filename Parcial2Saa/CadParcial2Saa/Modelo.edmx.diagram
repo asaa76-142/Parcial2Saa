@@ -4,8 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ec69317f3f294a79a7ab2d3e4ae6a503" Name="Diagram1">
-        <EntityTypeShape EntityType="Parcial2SaaModel.Series" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="f690f1bf5d124c05a4a45cc943cb586c" Name="Diagram1">
+        <EntityTypeShape EntityType="Parcial2SaaModel.IdiomaOriginal" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Parcial2SaaModel.Series" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="Parcial2SaaModel.fk_Series_IdiomaOriginal" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

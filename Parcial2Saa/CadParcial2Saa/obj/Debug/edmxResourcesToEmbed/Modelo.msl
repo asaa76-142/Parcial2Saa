@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Parcial2SaaModelStoreContainer" CdmEntityContainer="Parcial2SaaEntities">
+    <EntitySetMapping Name="IdiomaOriginal">
+      <EntityTypeMapping TypeName="Parcial2SaaModel.IdiomaOriginal">
+        <MappingFragment StoreEntitySet="IdiomaOriginal">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Series">
       <EntityTypeMapping TypeName="Parcial2SaaModel.Series">
         <MappingFragment StoreEntitySet="Series">
@@ -10,6 +19,8 @@
           <ScalarProperty Name="director" ColumnName="director" />
           <ScalarProperty Name="episodios" ColumnName="episodios" />
           <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
+          <ScalarProperty Name="urlPortada" ColumnName="urlPortada" />
+          <ScalarProperty Name="ididiomaOriginal" ColumnName="ididiomaOriginal" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -23,6 +34,8 @@
           <ScalarProperty Name="director" ColumnName="director" />
           <ScalarProperty Name="episodios" ColumnName="episodios" />
           <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
+          <ScalarProperty Name="urlPortada" ColumnName="urlPortada" />
+          <ScalarProperty Name="ididiomaOriginal" ColumnName="ididiomaOriginal" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>

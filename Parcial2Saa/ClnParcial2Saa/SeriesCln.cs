@@ -28,6 +28,8 @@ namespace ClnParcial2Saa
                 existente.director = series.director;
                 existente.episodios = series.episodios;
                 existente.fechaEstreno = series.fechaEstreno;
+                existente.urlPortada = series.urlPortada;
+                existente.ididiomaOriginal = series.ididiomaOriginal;
                 return context.SaveChanges();
             }
         }

@@ -27,6 +27,7 @@ namespace CadParcial2Saa
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<IdiomaOriginal> IdiomaOriginal { get; set; }
         public virtual DbSet<Series> Series { get; set; }
     
         public virtual ObjectResult<paSerieListar_Result> paSerieListar(string parametro)

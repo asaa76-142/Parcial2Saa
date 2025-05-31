@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdiomaOriginalCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeriesCln.cs" />
   </ItemGroup>

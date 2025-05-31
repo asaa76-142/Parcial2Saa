@@ -31,20 +31,35 @@ namespace CpParcial2Saa
             dgvLista.Columns["director"].HeaderText = "Director";
             dgvLista.Columns["episodios"].HeaderText = "Episodios";
             dgvLista.Columns["fechaEstreno"].HeaderText = "Fecha de Estreno";
+            dgvLista.Columns["urlPortada"].HeaderText = "URL Portada";
+            dgvLista.Columns["ididiomaOriginal"].HeaderText = "Idioma Original";
+
             if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["titulo"];
             btnEditar.Enabled = lista.Count > 0;
             btnEliminar.Enabled = lista.Count > 0;
         }
+
+        private void cargarIdiomaOriginal()
+        {
+            var idiomaOriginal = IdiomaOriginalCln.listar();
+            cxbIdiomaOriginal.DataSource = idiomaOriginal;
+            cxbIdiomaOriginal.DisplayMember = "descripcion";
+            cxbIdiomaOriginal.ValueMember = "id";
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             Size = new Size(818, 350);
             listar();
+            cargarIdiomaOriginal();
         }
         private void limpiar()
         {
             txtTitulo.Clear();
             txtSinopsis.Clear();
             txtDirector.Clear();
+            txturlPortada.Clear();
+            cxbIdiomaOriginal.SelectedIndex = -1;
             nudEpisodios.Value = 0;
         }
 
@@ -74,6 +89,8 @@ namespace CpParcial2Saa
             txtDirector.Text = series.director;
             nudEpisodios.Value = series.episodios;
             dTiFechaEstreno.Value = series.fechaEstreno;
+            txturlPortada.Text = series.urlPortada;
+            cxbIdiomaOriginal.SelectedValue = series.ididiomaOriginal;
 
             txtTitulo.Focus();
         }
@@ -100,6 +117,8 @@ namespace CpParcial2Saa
             erpDirector.SetError(txtDirector, "");
             erpEpisodios.SetError(nudEpisodios, "");
             erpFechaEstreno.SetError(dTiFechaEstreno, "");
+            erpUrlPortada.SetError(txturlPortada, "");
+            erpIdiomaOriginal.SetError(cxbIdiomaOriginal, "");
             if (string.IsNullOrEmpty(txtTitulo.Text))
             {
                 erpTitulo.SetError(txtTitulo, "El campo del Titulo es obligatorio");
@@ -125,6 +144,18 @@ namespace CpParcial2Saa
                 erpFechaEstreno.SetError(dTiFechaEstreno, "El campo de la Fecha Estreno es obligatorio");
                 esValido = false;
             }
+            //if (string.IsNullOrEmpty(txturlPortada.Text))
+            //{
+            //    erpUrlPortada.SetError(txturlPortada, "El campo del URL es obligatorio");
+            //    esValido = false;
+            //}
+
+            if (string.IsNullOrEmpty(cxbIdiomaOriginal.Text))
+            {
+                erpIdiomaOriginal.SetError(cxbIdiomaOriginal, "El campo Unidad de Medida es obligatorio");
+                esValido = false;
+            }
+
             return esValido;
         }
 
@@ -138,7 +169,9 @@ namespace CpParcial2Saa
                 series.director = txtDirector.Text.Trim();
                 series.episodios = (int)nudEpisodios.Value;
                 series.fechaEstreno = dTiFechaEstreno.Value;
-                series.usuarioRegistro = "admin";
+                //series.usuarioRegistro = "admin";
+                series.urlPortada = txturlPortada.Text.Trim();
+                series.ididiomaOriginal = Convert.ToInt32(cxbIdiomaOriginal.SelectedValue);
 
                 if (esNuevo)
                 {

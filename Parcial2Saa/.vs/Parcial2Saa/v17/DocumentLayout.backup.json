@@ -1,37 +1,27 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\",
+  "WorkspaceRootPath": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|solutionrelative:cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F824D54B-AFCC-45FA-B0AB-2E13E25EDFDB}|ClnParcial2Saa\\ClnParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\clnparcial2saa\\seriescln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F824D54B-AFCC-45FA-B0AB-2E13E25EDFDB}|ClnParcial2Saa\\ClnParcial2Saa.csproj|solutionrelative:clnparcial2saa\\seriescln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\cpparcial2saa\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|solutionrelative:cpparcial2saa\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|c:\\users\\auzas\\desktop\\paricial2saa\\parcial2saa\\cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|c:\\users\\auzas\\desktop\\parcial2saa\\paricial2saa\\parcial2saa\\cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|solutionrelative:cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\cpparcial2saa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|solutionrelative:cpparcial2saa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AEF6FDC-F238-40F5-AB77-49369B2A3EE6}|CpParcial2Saa\\CpParcial2Saa.csproj|solutionrelative:cpparcial2saa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D3046CC-D4FF-443F-9C3B-A857DA756151}|CadParcial2Saa\\CadParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\cadparcial2saa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{0D3046CC-D4FF-443F-9C3B-A857DA756151}|CadParcial2Saa\\CadParcial2Saa.csproj|solutionrelative:cadparcial2saa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{F824D54B-AFCC-45FA-B0AB-2E13E25EDFDB}|ClnParcial2Saa\\ClnParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\clnparcial2saa\\seriescln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F824D54B-AFCC-45FA-B0AB-2E13E25EDFDB}|ClnParcial2Saa\\ClnParcial2Saa.csproj|solutionrelative:clnparcial2saa\\seriescln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D3046CC-D4FF-443F-9C3B-A857DA756151}|CadParcial2Saa\\CadParcial2Saa.csproj|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\cadparcial2saa\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{0D3046CC-D4FF-443F-9C3B-A857DA756151}|CadParcial2Saa\\CadParcial2Saa.csproj|solutionrelative:cadparcial2saa\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,105 +31,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Parcial2Saa.sql ",
+              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa.sql",
+              "RelativeDocumentMoniker": "..\\Parcial2Saa.sql",
+              "ToolTip": "Parcial2Saa.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-31T13:30:28.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Util.cs",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Util.cs",
-              "RelativeDocumentMoniker": "CpParcial2Saa\\Util.cs",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Util.cs*",
-              "RelativeToolTip": "CpParcial2Saa\\Util.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T09:58:17.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\App.config",
-              "RelativeDocumentMoniker": "CpParcial2Saa\\App.config",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\App.config",
-              "RelativeToolTip": "CpParcial2Saa\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-31T09:37:17.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.Config",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CadParcial2Saa\\App.Config",
-              "RelativeDocumentMoniker": "CadParcial2Saa\\App.Config",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CadParcial2Saa\\App.Config",
-              "RelativeToolTip": "CadParcial2Saa\\App.Config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-31T09:27:07.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Modelo.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CadParcial2Saa\\Modelo.edmx",
-              "RelativeDocumentMoniker": "CadParcial2Saa\\Modelo.edmx",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CadParcial2Saa\\Modelo.edmx [Diagram1]",
-              "RelativeToolTip": "CadParcial2Saa\\Modelo.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-05-31T09:19:46.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SeriesCln.cs",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\ClnParcial2Saa\\SeriesCln.cs",
+              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\ClnParcial2Saa\\SeriesCln.cs",
               "RelativeDocumentMoniker": "ClnParcial2Saa\\SeriesCln.cs",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\ClnParcial2Saa\\SeriesCln.cs",
+              "ToolTip": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\ClnParcial2Saa\\SeriesCln.cs",
               "RelativeToolTip": "ClnParcial2Saa\\SeriesCln.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T08:22:10.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs",
               "RelativeDocumentMoniker": "CpParcial2Saa\\Form1.cs",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs",
+              "ToolTip": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs",
               "RelativeToolTip": "CpParcial2Saa\\Form1.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAAAKoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwKMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T07:50:37.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs",
               "RelativeDocumentMoniker": "CpParcial2Saa\\Form1.cs",
-              "ToolTip": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\auzas\\Desktop\\Parcial2Saa\\Paricial2Saa\\Parcial2Saa\\CpParcial2Saa\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "CpParcial2Saa\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T05:54:41.907Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Parcial2Saa.sql",
-              "DocumentMoniker": "C:\\Users\\auzas\\Desktop\\Paricial2Saa\\Parcial2Saa.sql",
-              "RelativeDocumentMoniker": "..\\Parcial2Saa.sql",
-              "ToolTip": "Parcial2Saa.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-31T05:35:39.124Z",
-              "EditorCaption": ""
             }
           ]
         }

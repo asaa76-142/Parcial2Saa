@@ -12,18 +12,19 @@ namespace CadParcial2Saa
     using System;
     using System.Collections.Generic;
     
-    public partial class Series
+    public partial class IdiomaOriginal
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public IdiomaOriginal()
+        {
+            this.Series = new HashSet<Series>();
+        }
+    
         public int id { get; set; }
-        public string titulo { get; set; }
-        public string sinopsis { get; set; }
-        public string director { get; set; }
-        public int episodios { get; set; }
-        public System.DateTime fechaEstreno { get; set; }
-        public string urlPortada { get; set; }
-        public int ididiomaOriginal { get; set; }
+        public string descripcion { get; set; }
         public short estado { get; set; }
     
-        public virtual IdiomaOriginal IdiomaOriginal { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Series> Series { get; set; }
     }
 }

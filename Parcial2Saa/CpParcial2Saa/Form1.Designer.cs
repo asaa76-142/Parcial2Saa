@@ -34,30 +34,36 @@
             this.lblSeries = new System.Windows.Forms.Label();
             this.txtParametro = new System.Windows.Forms.TextBox();
             this.gbxListaSeries = new System.Windows.Forms.GroupBox();
-            this.dgvLista = new System.Windows.Forms.DataGridView();
-            this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtSinopsis = new System.Windows.Forms.TextBox();
-            this.txtDirector = new System.Windows.Forms.TextBox();
-            this.dTiFechaEstreno = new System.Windows.Forms.DateTimePicker();
-            this.lblTitul = new System.Windows.Forms.Label();
-            this.lblSinopsis = new System.Windows.Forms.Label();
-            this.lblDirector = new System.Windows.Forms.Label();
-            this.lblEpisodios = new System.Windows.Forms.Label();
-            this.lblFechaEstreno = new System.Windows.Forms.Label();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.nudEpisodios = new System.Windows.Forms.NumericUpDown();
+            this.lblFechaEstreno = new System.Windows.Forms.Label();
+            this.lblEpisodios = new System.Windows.Forms.Label();
+            this.lblDirector = new System.Windows.Forms.Label();
+            this.lblSinopsis = new System.Windows.Forms.Label();
+            this.lblTitul = new System.Windows.Forms.Label();
+            this.dTiFechaEstreno = new System.Windows.Forms.DateTimePicker();
+            this.txtDirector = new System.Windows.Forms.TextBox();
+            this.txtSinopsis = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.erpTitulo = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpSinopsis = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpDirector = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpEpisodios = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpFechaEstreno = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cxbIdiomaOriginal = new System.Windows.Forms.ComboBox();
+            this.txturlPortada = new System.Windows.Forms.TextBox();
+            this.lblURL = new System.Windows.Forms.Label();
+            this.lblIdiom = new System.Windows.Forms.Label();
+            this.erpUrlPortada = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpIdiomaOriginal = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxListaSeries.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxDatos.SuspendLayout();
@@ -67,6 +73,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpDirector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpEpisodios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpFechaEstreno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpUrlPortada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpIdiomaOriginal)).BeginInit();
             this.SuspendLayout();
             // 
             // lblParametro
@@ -120,74 +128,6 @@
             this.gbxListaSeries.TabStop = false;
             this.gbxListaSeries.Text = "Lista de Series";
             // 
-            // dgvLista
-            // 
-            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(0, 19);
-            this.dgvLista.Name = "dgvLista";
-            this.dgvLista.Size = new System.Drawing.Size(790, 150);
-            this.dgvLista.TabIndex = 0;
-            // 
-            // gbxDatos
-            // 
-            this.gbxDatos.Controls.Add(this.nudEpisodios);
-            this.gbxDatos.Controls.Add(this.lblFechaEstreno);
-            this.gbxDatos.Controls.Add(this.lblEpisodios);
-            this.gbxDatos.Controls.Add(this.lblDirector);
-            this.gbxDatos.Controls.Add(this.lblSinopsis);
-            this.gbxDatos.Controls.Add(this.lblTitul);
-            this.gbxDatos.Controls.Add(this.dTiFechaEstreno);
-            this.gbxDatos.Controls.Add(this.txtDirector);
-            this.gbxDatos.Controls.Add(this.txtSinopsis);
-            this.gbxDatos.Controls.Add(this.txtTitulo);
-            this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.Controls.Add(this.btnCancelar);
-            this.gbxDatos.Location = new System.Drawing.Point(3, 322);
-            this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(796, 155);
-            this.gbxDatos.TabIndex = 15;
-            this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "Datos";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Image = global::CpParcial2Saa.Properties.Resources.buscar;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnBuscar.Location = new System.Drawing.Point(679, 61);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(111, 35);
-            this.btnBuscar.TabIndex = 16;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = global::CpParcial2Saa.Properties.Resources.guardar;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(585, 104);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(98, 41);
-            this.btnGuardar.TabIndex = 21;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = global::CpParcial2Saa.Properties.Resources.cancel;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(689, 104);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(98, 41);
-            this.btnCancelar.TabIndex = 22;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
             // btnNuevo
             // 
             this.btnNuevo.Image = global::CpParcial2Saa.Properties.Resources._new;
@@ -240,69 +180,45 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // txtTitulo
+            // dgvLista
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(105, 28);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(179, 20);
-            this.txtTitulo.TabIndex = 23;
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Location = new System.Drawing.Point(0, 19);
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.Size = new System.Drawing.Size(790, 150);
+            this.dgvLista.TabIndex = 0;
             // 
-            // txtSinopsis
+            // gbxDatos
             // 
-            this.txtSinopsis.Location = new System.Drawing.Point(105, 76);
-            this.txtSinopsis.Name = "txtSinopsis";
-            this.txtSinopsis.Size = new System.Drawing.Size(179, 20);
-            this.txtSinopsis.TabIndex = 24;
+            this.gbxDatos.Controls.Add(this.lblIdiom);
+            this.gbxDatos.Controls.Add(this.lblURL);
+            this.gbxDatos.Controls.Add(this.txturlPortada);
+            this.gbxDatos.Controls.Add(this.cxbIdiomaOriginal);
+            this.gbxDatos.Controls.Add(this.nudEpisodios);
+            this.gbxDatos.Controls.Add(this.lblFechaEstreno);
+            this.gbxDatos.Controls.Add(this.lblEpisodios);
+            this.gbxDatos.Controls.Add(this.lblDirector);
+            this.gbxDatos.Controls.Add(this.lblSinopsis);
+            this.gbxDatos.Controls.Add(this.lblTitul);
+            this.gbxDatos.Controls.Add(this.dTiFechaEstreno);
+            this.gbxDatos.Controls.Add(this.txtDirector);
+            this.gbxDatos.Controls.Add(this.txtSinopsis);
+            this.gbxDatos.Controls.Add(this.txtTitulo);
+            this.gbxDatos.Controls.Add(this.btnGuardar);
+            this.gbxDatos.Controls.Add(this.btnCancelar);
+            this.gbxDatos.Location = new System.Drawing.Point(3, 322);
+            this.gbxDatos.Name = "gbxDatos";
+            this.gbxDatos.Size = new System.Drawing.Size(796, 155);
+            this.gbxDatos.TabIndex = 15;
+            this.gbxDatos.TabStop = false;
+            this.gbxDatos.Text = "Datos";
             // 
-            // txtDirector
+            // nudEpisodios
             // 
-            this.txtDirector.Location = new System.Drawing.Point(105, 126);
-            this.txtDirector.Name = "txtDirector";
-            this.txtDirector.Size = new System.Drawing.Size(179, 20);
-            this.txtDirector.TabIndex = 25;
-            // 
-            // dTiFechaEstreno
-            // 
-            this.dTiFechaEstreno.Location = new System.Drawing.Point(394, 72);
-            this.dTiFechaEstreno.Name = "dTiFechaEstreno";
-            this.dTiFechaEstreno.Size = new System.Drawing.Size(200, 20);
-            this.dTiFechaEstreno.TabIndex = 27;
-            // 
-            // lblTitul
-            // 
-            this.lblTitul.AutoSize = true;
-            this.lblTitul.Location = new System.Drawing.Point(51, 35);
-            this.lblTitul.Name = "lblTitul";
-            this.lblTitul.Size = new System.Drawing.Size(36, 13);
-            this.lblTitul.TabIndex = 28;
-            this.lblTitul.Text = "Titulo:";
-            // 
-            // lblSinopsis
-            // 
-            this.lblSinopsis.AutoSize = true;
-            this.lblSinopsis.Location = new System.Drawing.Point(38, 78);
-            this.lblSinopsis.Name = "lblSinopsis";
-            this.lblSinopsis.Size = new System.Drawing.Size(49, 13);
-            this.lblSinopsis.TabIndex = 29;
-            this.lblSinopsis.Text = "Sinopsis:";
-            // 
-            // lblDirector
-            // 
-            this.lblDirector.AutoSize = true;
-            this.lblDirector.Location = new System.Drawing.Point(40, 129);
-            this.lblDirector.Name = "lblDirector";
-            this.lblDirector.Size = new System.Drawing.Size(47, 13);
-            this.lblDirector.TabIndex = 30;
-            this.lblDirector.Text = "Director:";
-            // 
-            // lblEpisodios
-            // 
-            this.lblEpisodios.AutoSize = true;
-            this.lblEpisodios.Location = new System.Drawing.Point(333, 31);
-            this.lblEpisodios.Name = "lblEpisodios";
-            this.lblEpisodios.Size = new System.Drawing.Size(55, 13);
-            this.lblEpisodios.TabIndex = 31;
-            this.lblEpisodios.Text = "Episodios:";
+            this.nudEpisodios.Location = new System.Drawing.Point(394, 29);
+            this.nudEpisodios.Name = "nudEpisodios";
+            this.nudEpisodios.Size = new System.Drawing.Size(120, 20);
+            this.nudEpisodios.TabIndex = 33;
             // 
             // lblFechaEstreno
             // 
@@ -313,12 +229,108 @@
             this.lblFechaEstreno.TabIndex = 32;
             this.lblFechaEstreno.Text = "Fecha de Estreno:";
             // 
-            // nudEpisodios
+            // lblEpisodios
             // 
-            this.nudEpisodios.Location = new System.Drawing.Point(394, 29);
-            this.nudEpisodios.Name = "nudEpisodios";
-            this.nudEpisodios.Size = new System.Drawing.Size(120, 20);
-            this.nudEpisodios.TabIndex = 33;
+            this.lblEpisodios.AutoSize = true;
+            this.lblEpisodios.Location = new System.Drawing.Point(333, 31);
+            this.lblEpisodios.Name = "lblEpisodios";
+            this.lblEpisodios.Size = new System.Drawing.Size(55, 13);
+            this.lblEpisodios.TabIndex = 31;
+            this.lblEpisodios.Text = "Episodios:";
+            // 
+            // lblDirector
+            // 
+            this.lblDirector.AutoSize = true;
+            this.lblDirector.Location = new System.Drawing.Point(40, 129);
+            this.lblDirector.Name = "lblDirector";
+            this.lblDirector.Size = new System.Drawing.Size(47, 13);
+            this.lblDirector.TabIndex = 30;
+            this.lblDirector.Text = "Director:";
+            // 
+            // lblSinopsis
+            // 
+            this.lblSinopsis.AutoSize = true;
+            this.lblSinopsis.Location = new System.Drawing.Point(38, 78);
+            this.lblSinopsis.Name = "lblSinopsis";
+            this.lblSinopsis.Size = new System.Drawing.Size(49, 13);
+            this.lblSinopsis.TabIndex = 29;
+            this.lblSinopsis.Text = "Sinopsis:";
+            // 
+            // lblTitul
+            // 
+            this.lblTitul.AutoSize = true;
+            this.lblTitul.Location = new System.Drawing.Point(51, 35);
+            this.lblTitul.Name = "lblTitul";
+            this.lblTitul.Size = new System.Drawing.Size(36, 13);
+            this.lblTitul.TabIndex = 28;
+            this.lblTitul.Text = "Titulo:";
+            // 
+            // dTiFechaEstreno
+            // 
+            this.dTiFechaEstreno.Location = new System.Drawing.Point(394, 72);
+            this.dTiFechaEstreno.Name = "dTiFechaEstreno";
+            this.dTiFechaEstreno.Size = new System.Drawing.Size(200, 20);
+            this.dTiFechaEstreno.TabIndex = 27;
+            // 
+            // txtDirector
+            // 
+            this.txtDirector.Location = new System.Drawing.Point(105, 126);
+            this.txtDirector.Name = "txtDirector";
+            this.txtDirector.Size = new System.Drawing.Size(179, 20);
+            this.txtDirector.TabIndex = 25;
+            // 
+            // txtSinopsis
+            // 
+            this.txtSinopsis.Location = new System.Drawing.Point(105, 76);
+            this.txtSinopsis.Name = "txtSinopsis";
+            this.txtSinopsis.Size = new System.Drawing.Size(179, 20);
+            this.txtSinopsis.TabIndex = 24;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.Location = new System.Drawing.Point(105, 28);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(179, 20);
+            this.txtTitulo.TabIndex = 23;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::CpParcial2Saa.Properties.Resources.guardar;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(585, 104);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(98, 41);
+            this.btnGuardar.TabIndex = 21;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = global::CpParcial2Saa.Properties.Resources.cancel;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.Location = new System.Drawing.Point(689, 104);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(98, 41);
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = global::CpParcial2Saa.Properties.Resources.buscar;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBuscar.Location = new System.Drawing.Point(679, 61);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(111, 35);
+            this.btnBuscar.TabIndex = 16;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // erpTitulo
             // 
@@ -340,6 +352,52 @@
             // 
             this.erpFechaEstreno.ContainerControl = this;
             // 
+            // cxbIdiomaOriginal
+            // 
+            this.cxbIdiomaOriginal.FormattingEnabled = true;
+            this.cxbIdiomaOriginal.Items.AddRange(new object[] {
+            "Koreano",
+            "Ingles",
+            "Español",
+            "Portugues"});
+            this.cxbIdiomaOriginal.Location = new System.Drawing.Point(666, 23);
+            this.cxbIdiomaOriginal.Name = "cxbIdiomaOriginal";
+            this.cxbIdiomaOriginal.Size = new System.Drawing.Size(121, 21);
+            this.cxbIdiomaOriginal.TabIndex = 34;
+            // 
+            // txturlPortada
+            // 
+            this.txturlPortada.Location = new System.Drawing.Point(394, 122);
+            this.txturlPortada.Name = "txturlPortada";
+            this.txturlPortada.Size = new System.Drawing.Size(179, 20);
+            this.txturlPortada.TabIndex = 35;
+            // 
+            // lblURL
+            // 
+            this.lblURL.AutoSize = true;
+            this.lblURL.Location = new System.Drawing.Point(316, 125);
+            this.lblURL.Name = "lblURL";
+            this.lblURL.Size = new System.Drawing.Size(72, 13);
+            this.lblURL.TabIndex = 36;
+            this.lblURL.Text = "URL Portada:";
+            // 
+            // lblIdiom
+            // 
+            this.lblIdiom.AutoSize = true;
+            this.lblIdiom.Location = new System.Drawing.Point(593, 29);
+            this.lblIdiom.Name = "lblIdiom";
+            this.lblIdiom.Size = new System.Drawing.Size(41, 13);
+            this.lblIdiom.TabIndex = 37;
+            this.lblIdiom.Text = "Idioma:";
+            // 
+            // erpUrlPortada
+            // 
+            this.erpUrlPortada.ContainerControl = this;
+            // 
+            // erpIdiomaOriginal
+            // 
+            this.erpIdiomaOriginal.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,7 +415,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Series";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxListaSeries.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.gbxDatos.ResumeLayout(false);
@@ -368,6 +425,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpDirector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpEpisodios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpFechaEstreno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpUrlPortada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpIdiomaOriginal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,6 +462,12 @@
         private System.Windows.Forms.ErrorProvider erpDirector;
         private System.Windows.Forms.ErrorProvider erpEpisodios;
         private System.Windows.Forms.ErrorProvider erpFechaEstreno;
+        private System.Windows.Forms.ComboBox cxbIdiomaOriginal;
+        private System.Windows.Forms.Label lblURL;
+        private System.Windows.Forms.TextBox txturlPortada;
+        private System.Windows.Forms.Label lblIdiom;
+        private System.Windows.Forms.ErrorProvider erpUrlPortada;
+        private System.Windows.Forms.ErrorProvider erpIdiomaOriginal;
     }
 }
 

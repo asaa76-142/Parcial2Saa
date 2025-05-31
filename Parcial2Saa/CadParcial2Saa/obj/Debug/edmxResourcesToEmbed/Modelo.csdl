@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Parcial2SaaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="IdiomaOriginal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Series" Relationship="Self.fk_Series_IdiomaOriginal" FromRole="IdiomaOriginal" ToRole="Series" />
+  </EntityType>
   <EntityType Name="Series">
     <Key>
       <PropertyRef Name="id" />
@@ -10,10 +19,30 @@
     <Property Name="director" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="episodios" Type="Int32" Nullable="false" />
     <Property Name="fechaEstreno" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="urlPortada" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ididiomaOriginal" Type="Int32" Nullable="false" />
     <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="IdiomaOriginal" Relationship="Self.fk_Series_IdiomaOriginal" FromRole="Series" ToRole="IdiomaOriginal" />
   </EntityType>
+  <Association Name="fk_Series_IdiomaOriginal">
+    <End Role="IdiomaOriginal" Type="Self.IdiomaOriginal" Multiplicity="1" />
+    <End Role="Series" Type="Self.Series" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IdiomaOriginal">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Series">
+        <PropertyRef Name="ididiomaOriginal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="Parcial2SaaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="IdiomaOriginal" EntityType="Self.IdiomaOriginal" />
     <EntitySet Name="Series" EntityType="Self.Series" />
+    <AssociationSet Name="fk_Series_IdiomaOriginal" Association="Self.fk_Series_IdiomaOriginal">
+      <End Role="IdiomaOriginal" EntitySet="IdiomaOriginal" />
+      <End Role="Series" EntitySet="Series" />
+    </AssociationSet>
     <FunctionImport Name="paSerieListar" ReturnType="Collection(Parcial2SaaModel.paSerieListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
@@ -25,6 +54,8 @@
     <Property Type="String" Name="director" Nullable="false" MaxLength="100" />
     <Property Type="Int32" Name="episodios" Nullable="false" />
     <Property Type="DateTime" Name="fechaEstreno" Nullable="false" />
+    <Property Type="String" Name="urlPortada" Nullable="false" MaxLength="250" />
+    <Property Type="Int32" Name="ididiomaOriginal" Nullable="false" />
     <Property Type="Int16" Name="estado" Nullable="false" />
   </ComplexType>
 </Schema>
