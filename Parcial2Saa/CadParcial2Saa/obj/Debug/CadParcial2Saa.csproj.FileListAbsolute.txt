@@ -1,0 +1,12 @@
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\CadParcial2Saa.dll.config
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\CadParcial2Saa.dll
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\CadParcial2Saa.pdb
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\EntityFramework.dll
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\EntityFramework.xml
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\obj\Debug\CadParcial2Saa.csproj.AssemblyReference.cache
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\obj\Debug\CadParcial2Saa.csproj.CoreCompileInputs.cache
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\obj\Debug\CadParci.218A3F4F.Up2Date
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\obj\Debug\CadParcial2Saa.dll
+C:\Users\auzas\Desktop\Paricial2Saa\Parcial2Saa\CadParcial2Saa\obj\Debug\CadParcial2Saa.pdb
